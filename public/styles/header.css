@@ -1,6 +1,6 @@
 header {
-  width: 100%;
-  background-color: #dabd4b;
+  width: 100vw;
+  background-color: #e5c959;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   height: 400px;
   position: relative;
@@ -13,10 +13,17 @@ header {
   justify-content: center;
 
 }
+.name {
+  font-family: 'Source Sans Pro', sans-serif;
 
-.profile-name h2 {
+}
+
+.profile-name {
   display: flex;
   justify-content: center;
-  margin-top: 0px;
   color: white;
+  font-size: 1.5em;
+
 }
+
+
