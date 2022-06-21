@@ -1,0 +1,24 @@
+.border{
+  border-top: 5px solid rgb(75, 75, 55);
+  margin-top: 15px;
+}
+.tweet-text {
+  font-weight: 600;
+}
+.tweet-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.tweet-button {
+  font-family: 'Bungee', cursive;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  border: none;
+}
+
+.counter {
+  font-family: 'Bungee', cursive;
+}
