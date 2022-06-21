@@ -1,6 +1,11 @@
-.border{
-  border-top: 5px solid rgb(75, 75, 55);
-  margin-top: 15px;
+#enterTweet-text{
+  border: none;
+  background-color: transparent;
+  border-bottom: 5px solid rgb(75, 75, 55);
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  resize: none;
 }
 .tweet-text {
   font-weight: 600;
