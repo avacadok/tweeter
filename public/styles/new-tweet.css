@@ -6,6 +6,8 @@
   display: block;
   width: 100%;
   resize: none;
+  outline: none;
+  font-weight: 600;
 }
 .tweet-text {
   font-weight: 600;
