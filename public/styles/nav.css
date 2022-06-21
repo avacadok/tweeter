@@ -1,5 +1,4 @@
 nav {
-  font-family: 'Bungee', cursive;
   background-color: #4056A1;
   height: 120px;
   color: #FFFFFF;
@@ -10,19 +9,12 @@ nav {
   align-items: flex-end;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  position: absolute;
-  z-index: 1;
  }
 
 #title {
-  font-size: xx-large;
+  font-family: 'Bungee', cursive;
+  font-size: 1.5em;
   padding-bottom: 20px;
-
-}
-
-#sub-title {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: large;
 
 }
 
@@ -33,6 +25,10 @@ nav {
   align-items: center;
   padding-bottom: 10px;
 
+}
+
+#sub-title {
+  font-size: x-large;
 }
 
 .fa-angles-down {

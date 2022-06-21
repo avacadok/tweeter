@@ -4,11 +4,11 @@ header {
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   height: 400px;
   position: relative;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-pic {
-
   display: flex;
   justify-content: center;
 
@@ -18,4 +18,5 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 0px;
+  color: white;
 }
