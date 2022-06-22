@@ -45,17 +45,17 @@ article.tweet header{
 
 .profile-thing {
   display: flex;
-  margin-left: 15px;
+  margin-left: 30px;
 }
 
-.profile-img {
-  padding-left: 35px;
+.profile-img-name {
+  padding-left: 15px;
   display: flex;
   align-items: center;
 }
 
 .profile-handle {
-  padding-right: 35px;
+  padding-right: 30px;
   font-weight: 600;
   color: rgb(95, 99, 99);
   display: flex;
