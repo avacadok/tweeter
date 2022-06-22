@@ -29,3 +29,86 @@
 .counter {
   font-family: 'Bungee', cursive;
 }
+
+article{
+  margin-top: 60px;
+  width: 100%;
+  margin: none;
+  border: 5px solid rgb(75, 75, 55);
+}
+
+article.tweet header{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-thing {
+  display: flex;
+  margin-left: 15px;
+}
+
+.profile-img {
+  padding-left: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-handle {
+  padding-right: 35px;
+  font-weight: 600;
+  color: rgb(95, 99, 99);
+  display: flex;
+  align-items: center;
+
+}
+
+.post-detail {
+  margin-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#text {
+  padding-left: 25px;
+  font-weight: 600;
+}
+
+.border {
+  border-bottom: 5px solid rgb(75, 75, 55);;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+
+.post-time {
+  font-size: large;
+}
+
+.fa-reply {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.fa-flag:hover {
+  color: rgb(87, 123, 215);
+}
+
+.fa-reply:hover{
+  color: #e5c959;
+}
+
+.fa-heart:hover {
+  color: rgb(238, 119, 90);
+}
+
+article:hover {
+  box-shadow: 7px 7px #b7c2c2;
+}

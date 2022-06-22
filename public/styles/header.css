@@ -1,4 +1,4 @@
-header {
+#main-header {
   width: 100vw;
   background-color: #e5c959;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
@@ -15,7 +15,6 @@ header {
 }
 .name {
   font-family: 'Source Sans Pro', sans-serif;
-
 }
 
 .profile-name {
@@ -23,6 +22,8 @@ header {
   justify-content: center;
   color: white;
   font-size: 1.5em;
+  /* changed profile pic */
+  padding-top: 30px;
 
 }
 
