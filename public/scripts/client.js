@@ -71,4 +71,18 @@ $(document).ready(function() {
 
   renderTweets(data);
 
+  $("#form-submit").submit(function(event) {
+    console.log("hello there");
+    //prevent DOM default behaviour
+    event.preventDefault();
+    //use ajax to do a POST request without refreshing the website
+    $.ajax('/tweets', { method: 'POST', data: $("form").serialize() })
+      .then(function() {
+        console.log('Success!');
+        console.log($("form").serialize());
+      });
+
+  });
+
+
 });
