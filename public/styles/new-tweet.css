@@ -97,6 +97,10 @@ article.tweet header{
   padding-right: 10px;
 }
 
+.post-icon {
+  font-size: large;
+}
+
 .fa-flag:hover {
   color: rgb(87, 123, 215);
 }
