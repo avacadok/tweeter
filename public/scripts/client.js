@@ -4,6 +4,12 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
+  
+  const escape = function(str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
   const renderTweets = function(tweets) {
     // loops through tweets
@@ -19,20 +25,20 @@ $(document).ready(function() {
   <article class="tweet"> 
     <header>
       <div class="profile-thing" >
-        <img src="${tweet.user.avatars}" width="80" height="80">
-        <div class="profile-img-name">${tweet.user.name}</div>
+        <img src="${escape(tweet.user.avatars)}" width="80" height="80">
+        <div class="profile-img-name">${escape(tweet.user.name)}</div>
       </div>
       
-      <div class="profile-handle">${tweet.user.handle}</div>
+      <div class="profile-handle">${escape(tweet.user.handle)}</div>
     </header >
 
     <div class="post-detail">
-      <div id="text">${tweet.content.text}</div>
+      <div id="text">${escape(tweet.content.text)}</div>
       <div class="border"></div>
     </div>
 
     <div class="post-info">
-      <div class="post-time">${timeago.format(tweet.created_at)}</div>
+      <div class="post-time">${escape(timeago.format(tweet.created_at))}</div>
       <div class="post-icon">
         <i class="fa-solid fa-flag"></i>
         <i class="fa-solid fa-reply"></i>
