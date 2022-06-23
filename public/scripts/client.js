@@ -32,7 +32,7 @@ $(document).ready(function() {
     </div>
 
     <div class="post-info">
-      <div class="post-time">${tweet.created_at}</div>
+      <div class="post-time">${timeago.format(tweet.created_at)}</div>
       <div class="post-icon">
         <i class="fa-solid fa-flag"></i>
         <i class="fa-solid fa-reply"></i>
@@ -65,6 +65,6 @@ $(document).ready(function() {
     })
   };
 
-  loadtweets()
+  loadtweets();
 
 });
