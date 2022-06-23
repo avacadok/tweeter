@@ -41,40 +41,43 @@ $(document).ready(function() {
     </div>
   </article>
   `;
-    $('#tweets-container').append($tweet);
+    //append add new tweet to the end of the container
+    //add new tweet in the beginning of the container
+    $('#tweets-container').prepend($tweet);
     return $tweet;
   };
 
 
   $("#form-submit").submit(function(event) {
-    console.log("hello there");
     //prevent DOM default behaviour
     event.preventDefault();
     const tweetLen = $('#enterTweet-text').val().length;
-      if (tweetLen > 140){
-        return alert("Sorry, your input has exceeded the limit. Please reduce your input.");
-      } else if (tweetLen === 0) {
-        return alert("Please enter your tweet.");
-      }
+    if (tweetLen > 140) {
+      return alert("Sorry, your input has exceeded the limit. Please reduce your input.");
+    } else if (tweetLen === 0) {
+      return alert("Please enter your tweet.");
+    }
+
 
     //use ajax to do a POST request without refreshing the website
     $.ajax('/tweets', { method: 'POST', data: $("form").serialize() })
       .then(function() {
         console.log('Success!');
         console.log($("form").serialize());
-      })
+        $('#tweets-container').empty();
+        loadtweets();
+      });
     
-    //or 
+    //or
     //const serialized = $("form").serialize();
     //$.post("/tweets", serialized);
-
   });
 
   const loadtweets = function() {
     $.ajax('/tweets', {method: 'GET'})
-    .then(function(tweetArr) {
-      renderTweets(tweetArr);
-    })
+      .then(function(tweetArr) {
+        renderTweets(tweetArr);
+      });
   };
 
   loadtweets();

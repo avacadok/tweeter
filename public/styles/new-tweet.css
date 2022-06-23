@@ -26,6 +26,10 @@
   border: none;
 }
 
+.tweet-button:hover {
+  box-shadow: 3px 3px #e5c959;
+}
+
 .counter {
   font-family: 'Bungee', cursive;
 }
