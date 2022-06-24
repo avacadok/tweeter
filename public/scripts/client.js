@@ -52,8 +52,8 @@ $(document).ready(function () {
     return $tweet;
   };
 
-  $('#sub-title').on('click', function() {
-    if ($('.new-tweet').is(":hidden")){
+  $('#sub-title').on('click', function () {
+    if ($('.new-tweet').is(":hidden")) {
       $('.new-tweet').slideDown('slow');
     } else {
       $('.new-tweet').slideUp();
@@ -87,12 +87,8 @@ $(document).ready(function () {
         $('#enterTweet-text').val("");
         $('#counter').text(140);
         loadtweets();
-
       });
 
-    //or
-    //const serialized = $("form").serialize();
-    //$.post("/tweets", serialized);
   });
 
   const loadtweets = function () {
@@ -105,5 +101,4 @@ $(document).ready(function () {
   loadtweets();
 
   $(".hidden-info").hide();
-
 });
