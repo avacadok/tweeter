@@ -4,7 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
-  
   const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
@@ -53,15 +52,22 @@ $(document).ready(function() {
     return $tweet;
   };
 
-
   $("#form-submit").submit(function(event) {
     //prevent DOM default behaviour
     event.preventDefault();
     const tweetLen = $('#enterTweet-text').val().length;
+    
+    //use.text() to input the msg that would show when the conditional statement is reached
+    //less div class on HTML
     if (tweetLen > 140) {
-      return alert("Sorry, your input has exceeded the limit. Please reduce your input.");
+      $(".warning-msg").text("Sorry, your input has exceeded the limit. Please reduce your input!");
+      return $(".hidden-info").slideDown();
     } else if (tweetLen === 0) {
-      return alert("Please enter your tweet.");
+      $(".warning-msg").text("Please enter your tweet.");
+      return $(".hidden-info").slideDown();
+    } else if (tweetLen <= 140) {
+      //also can use slideUp() to hide the error msg
+      $(".hidden-info").slideUp();
     }
 
 
@@ -87,5 +93,7 @@ $(document).ready(function() {
   };
 
   loadtweets();
+
+  $(".hidden-info").hide();
 
 });

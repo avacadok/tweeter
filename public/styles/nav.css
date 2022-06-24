@@ -30,12 +30,12 @@ nav {
 }
 
 #sub-title {
-  font-size: x-large;
+  font-size: xx-large;
 
 }
 
 .fa-angles-down {
-  color: rgb(238, 226, 116);
+  color: rgb(238, 119, 90);
   margin-top: 2px;
 }
 
@@ -54,3 +54,5 @@ nav {
     transform: translateY(-5px);
   }
 }
+
+

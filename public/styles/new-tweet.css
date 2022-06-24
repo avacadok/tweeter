@@ -9,6 +9,28 @@
   outline: none;
   font-weight: 600;
 }
+
+.hidden-info {
+  border: 5px solid rgb(238, 119, 90);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.warning-msg {
+  font-weight: 600;
+  color: rgb(238, 119, 90);
+  font-size: xx-large;
+} 
+
+#warning-icon {
+  display: flex;
+  align-items: center;
+  color: rgb(238, 119, 90);
+  margin-right: 10px;
+}
+
 .tweet-text {
   font-weight: 600;
 }
