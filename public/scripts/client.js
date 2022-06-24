@@ -52,6 +52,14 @@ $(document).ready(function () {
     return $tweet;
   };
 
+  $('#sub-title').on('click', function() {
+    if ($('.new-tweet').is(":hidden")){
+      $('.new-tweet').slideDown('slow');
+    } else {
+      $('.new-tweet').slideUp();
+    }
+  });
+
   $("#form-submit").submit(function (event) {
     //prevent DOM default behaviour
     event.preventDefault();
@@ -69,7 +77,6 @@ $(document).ready(function () {
       //also can use slideUp() to hide the error msg
       $(".hidden-info").slideUp();
     }
-
 
     //use ajax to do a POST request without refreshing the website
     $.ajax('/tweets', { method: 'POST', data: $("form").serialize() })
