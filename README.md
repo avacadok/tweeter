@@ -6,8 +6,14 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["screenshot description"](https://github.com/avacadok/tinyapp/blob/master/project%20picture/myURLs.png)
-!["screenshot description"](https://github.com/avacadok/tinyapp/blob/master/project%20picture/creat_shortURLs.png)
+### Tweet Main Presentation
+!["screenshot description"](https://github.com/avacadok/tweeter/blob/master/docs/tweet.png?raw=true)
+### Users' Tweets
+!["screenshot description"](https://github.com/avacadok/tweeter/blob/master/docs/tweet-page.png?raw=true)
+### Error Message
+!["screenshot description"](https://github.com/avacadok/tweeter/blob/master/docs/tweet-errormsg.png?raw=true)
+### Responsive Design for Desktop
+!["screenshot description"](https://github.com/avacadok/tweeter/blob/master/docs/responsive.png?raw=true)
 
 ## Getting Started
 
@@ -29,4 +35,4 @@ This repository is the starter code for the project: Students will fork and clon
 - Responsive Design: works well with various screen sizes (desktops and laptops).
 - Compose Tweets: allows users to send out tweets that are within 140 characters.
 - Tweet Detail: each tweet shows users information and the time of the tweet posted.
-- Error message: displays error message when users try to compose empty tweets or tweets are over 140 characters.
+- Error message: displays message when users try to compose empty tweets or tweets are over 140 characters.
