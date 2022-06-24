@@ -3,14 +3,14 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-$(document).ready(function() {
-  const escape = function(str) {
+$(document).ready(function () {
+  const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
 
-  const renderTweets = function(tweets) {
+  const renderTweets = function (tweets) {
     // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
@@ -52,11 +52,11 @@ $(document).ready(function() {
     return $tweet;
   };
 
-  $("#form-submit").submit(function(event) {
+  $("#form-submit").submit(function (event) {
     //prevent DOM default behaviour
     event.preventDefault();
     const tweetLen = $('#enterTweet-text').val().length;
-    
+
     //use.text() to input the msg that would show when the conditional statement is reached
     //less div class on HTML
     if (tweetLen > 140) {
@@ -73,21 +73,24 @@ $(document).ready(function() {
 
     //use ajax to do a POST request without refreshing the website
     $.ajax('/tweets', { method: 'POST', data: $("form").serialize() })
-      .then(function() {
+      .then(function () {
         console.log('Success!');
         console.log($("form").serialize());
         $('#tweets-container').empty();
+        $('#enterTweet-text').val("");
+        $('#counter').text(140);
         loadtweets();
+
       });
-    
+
     //or
     //const serialized = $("form").serialize();
     //$.post("/tweets", serialized);
   });
 
-  const loadtweets = function() {
-    $.ajax('/tweets', {method: 'GET'})
-      .then(function(tweetArr) {
+  const loadtweets = function () {
+    $.ajax('/tweets', { method: 'GET' })
+      .then(function (tweetArr) {
         renderTweets(tweetArr);
       });
   };

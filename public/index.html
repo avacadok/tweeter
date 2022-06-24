@@ -1,107 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
-    
-    <!-- External font from Google Bungee -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-    
-    <!-- External font from Google Source Sans Pro -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
-    
-    <!-- App CSS -->
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-    
-    <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-  </head>
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
-  <body>
-    <!-- Top nav bar (fixed) -->
-    <nav>
-        <span id="title">tweeter</span>
-          <div class="arrow-container">
-            <span id="sub-title"><strong>Write</strong> a new tweet</span>
-            <div class="bounce">
-              <i class="fa-solid fa-angles-down"></i>
-            </div>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    type="text/css" />
+
+  <!-- External font from Google Bungee -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+  <!-- External font from Google Source Sans Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- App CSS -->
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
+  <!-- External JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/client.js"></script>
+  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+</head>
+
+<body>
+  <!-- Top nav bar (fixed) -->
+  <nav>
+    <span id="title">tweeter</span>
+    <div class="arrow-container">
+      <span id="sub-title"><strong>Write</strong> a new tweet</span>
+      <div class="bounce">
+        <i class="fa-solid fa-angles-down"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="headernMain">
+    <header id="main-header">
+      <div class="profile-pic">
+        <img src="/images/nyanko-sensei.png" width="260" height="220">
+      </div>
+      <br>
+      <div class="profile-name">
+        <span class="profile-name-bold"><strong>Avacado</strong> K</span>
+      </div>
+    </header>
+
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <section class="new-tweet">
+        <div class="hidden-info">
+          <i class="fa-solid fa-triangle-exclamation fa-fade" id="warning-icon"></i>
+          <p class="warning-msg"></p>
+        </div>
+
+        <form method="POST" action="/tweets" id="form-submit">
+          <label for="tweet-text" class="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="enterTweet-text" oninput="countChar(this)"></textarea>
+
+          <div class="tweet-bottom">
+            <button type="submit" class="tweet-button">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text" id="counter">140</output>
           </div>
-    </nav>
-    
-    <div class="headernMain">
-      <header id="main-header">
-        <div class="profile-pic">
-            <img src="/images/nyanko-sensei.png" width="260" height="220"> 
-        </div>
-        <br>
-        <div class="profile-name">
-            <span class="profile-name-bold"><strong>Avacado</strong> K</span> 
-        </div>
-      </header>
-
-      <!-- Page-specific (main) content here -->
-      <main class="container">
-        <section class="new-tweet">
-          <div  class="hidden-info">
-            <i class="fa-solid fa-triangle-exclamation" id="warning-icon"></i>
-              <p class="warning-msg"></p>
+        </form>
+      </section>
+      <div id="tweets-container">
+      </div>
+      <article class="tweet">
+        <header>
+          <div class="profile-thing">
+            <img src="/images/4237.png" width="80" height="80">
+            <div class="profile-img-name">Snowie K</div>
           </div>
 
-          <form method="POST" action="/tweets" id="form-submit">
-            <label for="tweet-text" class="tweet-text">What are you humming about?</label>
-                <textarea name="text" id="enterTweet-text" oninput="countChar(this)"></textarea>
+          <div class="profile-handle">@snowiethecat</div>
+        </header>
 
-            <div class="tweet-bottom">
-              <button type="submit" class="tweet-button">Tweet</button>
-              <output name="counter" class="counter" for="tweet-text" id="counter">140</output>
-            </div>
-          </form>
-        </section>
-        <div id="tweets-container">
-          <article class="tweet"> 
-              <header>
-                <div class="profile-thing" >
-                  <img src="/images/4237.png" width="80" height="80">
-                  <div class="profile-img-name">Snowie K</div>
-                </div>
-                
-                <div class="profile-handle">@snowiethecat</div>
-              </header >
-
-              <div class="post-detail">
-                <div id="text">Hello World!</div>
-                <div class="border"></div>
-              </div>
-
-              <div class="post-info">
-                <div class="post-time">10 days ago</div>
-                <div class="post-icon">
-                  <i class="fa-solid fa-flag"></i>
-                  <i class="fa-solid fa-reply"></i>
-                  <i class="fa-solid fa-heart"></i>
-                </div>
-              </div>
-          </article>
+        <div class="post-detail">
+          <div id="text">Hello World!</div>
+          <div class="border"></div>
         </div>
-      </main>
+
+        <div class="post-info">
+          <div class="post-time">10 days ago</div>
+          <div class="post-icon">
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-reply"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </div>
+      </article>
+    </main>
   </div>
-  </body>
+</body>
 </html>
